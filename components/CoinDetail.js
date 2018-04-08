@@ -10,13 +10,13 @@ class CoinDetail extends React.Component {
             <View style={styles.container}>
                 <Image
                 style={{width: 50, height: 50}}
-                source={{uri: 'https://bitcoin.org/img/icons/opengraph.png'}}
+                source={{uri: this.props.iconUri}}
                 />
-                <Text style={[styles.text]}>{'#' + (this.props.rank || 'Rank')}</Text>
-                <Text style={[styles.text]}>{this.props.name || 'Name'}</Text>
-                <Text style={[styles.text]}>{'Price: ' + (this.props.price || 0)}</Text>
-                <Text style={[styles.text]}>{'Volume: ' + (this.props.volumn || 0)}</Text>
-                <Text style={[styles.text]}>{'Updated: ' + (this.props.time || 0)}</Text>
+                <Text style={[styles.text, {flex: 1}]}>{'#' + (this.props.rank || 'Rank')}</Text>
+                <Text style={[styles.text, {flex: 1}]}>{this.props.name || 'Name'}</Text>
+                <Text style={[styles.text, {flex: 1}]}>{'Price: ' + (this.props.price || 0)}</Text>
+                <Text style={[styles.text, {flex: 1}]}>{'Volume: ' + (this.props.volumn || 0)}</Text>
+                <Text style={[styles.text, {flex: 1}]}>{'Updated: ' + (this.props.time || 0)}</Text>
             </View>
         );
     }

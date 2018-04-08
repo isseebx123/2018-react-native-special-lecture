@@ -21,7 +21,11 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.sanghyun.my-first-app"
+    },
+    "android": {
+      "package": "com.sanghyun.my-first-app"
     }
   }
 }

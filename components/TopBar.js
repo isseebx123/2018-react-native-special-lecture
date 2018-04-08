@@ -5,9 +5,9 @@ class TopBar extends React.Component {
     render(){
         return(
             <View style={styles.container}>
-                <Text>123</Text>
+                <Text></Text>
                 <Text style={{fontSize:20}}>{this.props.title}</Text>
-                <Text>345</Text>
+                <Text></Text>
             </View>
         );
     }

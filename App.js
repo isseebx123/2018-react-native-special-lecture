@@ -8,7 +8,7 @@ export default class App extends React.Component {
     return (
       <View style={styles.container}>
       <StatusBar hidden={true} barStyle="light-content" />
-      <TopBar title="im title"/>
+      <TopBar title="코인"/>
       <CoinView style={styles.coinView}></CoinView>
       </View>
     );
@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: 'column',
     backgroundColor: 'skyblue',
-    alignItems: 'center',
+    // alignItems: 'center',
     // justifyContent: 'space-around',
   }
 });
